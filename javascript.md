@@ -259,6 +259,53 @@ mostrarMensagem();
 
 ``` 
 
+####Declarando funções:
+```
+function nome (parâmetro1, parâmetro2, ...) {
+  código da função
+  return valor, expressão ou função de retorno
+}
+```
+
+```
+const nomeDaConst = (parâmetro1, parâmetro2, ...) => {
+  código da função
+  return valor, expressão ou função de retorno
+}
+```
+
+```
+nome(argumento1, argumento2, ...);
+nomeDaConst(argumento1, argumento2, ...);
+```
+
+Uma função quando declarada pode ter um nome, parâmetros e retorno.
+
+*nome* é o nome que você dá para a função, ele pode ser qualquer nome como em variáveis, com exceção de palavras reservadas como *function* ou *let*, por exemplo e é ele que você utiliza para executar (chamar) a função.
+
+*Parâmetros* são valores que serão passados no momento da execução da função, quando executada a função os *parâmetros* recebem um valor e este passa a ser chamado de *argumento* da função. Nos exemplos temos os parâmentos numero1 e numero2. Esses parâmetros são variáveis que irão receber um valor em uma função enquanto que um argumento é o valor (que pode originar de uma variável ou expressão) que você passa para a função (ou método).
+
+E *retorno* é um valor ou função que a sua função retorna no fim da sua execução. O retorno identifica o fim da função, ou seja, ao encontrar um return a função retorna e encerra a sua execução independente se existe código após o return ou não.
+
+```
+//declaração da função com a palavra reservada function
+function somar (numero1, numero2) {
+  return numero1 + numero2;
+}
+```
+
+```
+//declaração de função anônima em arrow function armazenada na variável somarEmArrowFunction
+const somarEmArrowFunction = (numero1, numero2) => {
+  return numero1 + numero2;
+}
+```
+
+```
+somar(1 + 2) //função somar sendo executada com os argumentos 1 e 2, 1 assume o lugar do numero1 dentro da nossa função e o 2 do numero2
+somarEmArrowFunction(3 + 4) //função somarEmArrowFunction sendo executada com os argumentos 3 e 4, 3 assume o lugar do numero1 dentro da nossa função e o 4 do numero2
+```
+
 ### Document Object Model
 
 O document object model, ou DOM, é uma estrutura no JavaScript utilizada para interagir diretamente com os elementos HTML na página.
